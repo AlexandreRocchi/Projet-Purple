@@ -49,7 +49,7 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.player.Location = new System.Drawing.Point(45, 380);
+            this.player.Location = new System.Drawing.Point(68, 372);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(31, 40);
             this.player.TabIndex = 1;
@@ -58,7 +58,10 @@
             // 
             // gametimer
             // 
+            this.gametimer.Enabled = true;
+            this.gametimer.Interval = 20;
             this.gametimer.Tag = "gametimer";
+            this.gametimer.Tick += new System.EventHandler(this.Main_Game);
             // 
             // Form1
             // 
@@ -69,8 +72,9 @@
             this.Controls.Add(this.player);
             this.Controls.Add(this.platform1);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Jump";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.platform1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             this.ResumeLayout(false);

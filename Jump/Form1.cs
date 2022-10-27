@@ -13,24 +13,18 @@ namespace Jump
     public partial class Form1 : Form
     {
         bool goLeft, goRight, jumping, IsGameOver;
-        bool enemy_direction;
         int jumpSpeed;
         int force;
-        int score = 0;
         int playerSpeed = 10;
 
-        int horizontalSpeed = 5;
-        int verticalSpeed = 3;
-
-        int ennemyOneSpeed = 5;
-        int enemyTwoSpeed = 3;
+    
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Main_Game(object sender, EventArgs e)
         {
             player.Top += jumpSpeed;
 
@@ -52,6 +46,10 @@ namespace Jump
             {
                 jumpSpeed = -12;
                 force -= 1;
+            }
+            else
+            {
+                jumpSpeed = 12;
             }
 
             foreach (Control x in this.Controls)
@@ -78,6 +76,7 @@ namespace Jump
         {
             if (e.KeyCode == Keys.Left)
             {
+                Console.WriteLine("Gauche");
                 goLeft = true;
             }
             if (e.KeyCode == Keys.Right)
@@ -92,9 +91,10 @@ namespace Jump
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
-    
+            
             if (e.KeyCode == Keys.Left)
             {
+                Console.WriteLine("Gauche desac");
                 goLeft = false;
             }
             if (e.KeyCode == Keys.Right)
@@ -117,9 +117,7 @@ namespace Jump
             goLeft = false;
             goRight = false;
             IsGameOver = false;
-            score = 0;
 
-            //txtscore.Text = "Score : " + score;
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && x.Visible == false)
@@ -130,12 +128,6 @@ namespace Jump
 
             player.Left = 24;
             player.Top = 687;
-
-            //enemyOne.Left = 475; 
-            //enemyTwo.Left = 794;
-
-            //horizontal.Left = 230;
-            //vertical.Top = 287;
 
             gametimer.Start();
 
