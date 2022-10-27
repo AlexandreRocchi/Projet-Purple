@@ -15,7 +15,7 @@ namespace Jump
         bool goLeft, goRight, jumping, IsGameOver;
         bool platformstar_move = true;
         int jumpSpeed;
-        int force;
+        int gravity;
         int playerSpeed = 10;
         int enemy1Speed = 3;
         int platformSpeed = 2;
@@ -39,7 +39,7 @@ namespace Jump
                 player.Left += playerSpeed;
             }
 
-            if (jumping == true && force < 0)
+            if (jumping == true && gravity < 0)
             {
                 jumping = false;
             }
@@ -47,7 +47,7 @@ namespace Jump
             if (jumping == true)
             {
                 jumpSpeed = -12;
-                force -= 1;
+                gravity -= 1;
             }
             else
             {
@@ -88,7 +88,7 @@ namespace Jump
                         if (player.Bounds.IntersectsWith(x.Bounds) && !jumping)
                         {
                             
-                            force = 8;
+                            gravity = 8;
                             player.Top = x.Top - player.Height;
                             jumpSpeed = 0;
                         }
@@ -148,6 +148,7 @@ namespace Jump
                 }
                 if (characterSkin == 4)
                 {
+
                     player.BackColor = Color.DarkBlue;
                     characterSkin = 0;
                 }
