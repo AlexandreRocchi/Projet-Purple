@@ -32,8 +32,18 @@
             this.platform1 = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.gametimer = new System.Windows.Forms.Timer(this.components);
+            this.platform2 = new System.Windows.Forms.PictureBox();
+            this.enemy1 = new System.Windows.Forms.PictureBox();
+            this.Prompt = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.platformstar = new System.Windows.Forms.PictureBox();
+            this.star = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.platform1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platform2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platformstar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.star)).BeginInit();
             this.SuspendLayout();
             // 
             // platform1
@@ -49,7 +59,7 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.player.Location = new System.Drawing.Point(68, 372);
+            this.player.Location = new System.Drawing.Point(24, 372);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(31, 40);
             this.player.TabIndex = 1;
@@ -63,12 +73,76 @@
             this.gametimer.Tag = "gametimer";
             this.gametimer.Tick += new System.EventHandler(this.Main_Game);
             // 
+            // platform2
+            // 
+            this.platform2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.platform2.Location = new System.Drawing.Point(338, 372);
+            this.platform2.Name = "platform2";
+            this.platform2.Size = new System.Drawing.Size(199, 24);
+            this.platform2.TabIndex = 2;
+            this.platform2.TabStop = false;
+            this.platform2.Tag = "platform";
+            // 
+            // enemy1
+            // 
+            this.enemy1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.enemy1.Location = new System.Drawing.Point(506, 335);
+            this.enemy1.Name = "enemy1";
+            this.enemy1.Size = new System.Drawing.Size(31, 40);
+            this.enemy1.TabIndex = 3;
+            this.enemy1.TabStop = false;
+            this.enemy1.Tag = "enemy";
+            // 
+            // Prompt
+            // 
+            this.Prompt.AutoSize = true;
+            this.Prompt.Font = new System.Drawing.Font("Consolas", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prompt.Location = new System.Drawing.Point(407, 77);
+            this.Prompt.Name = "Prompt";
+            this.Prompt.Size = new System.Drawing.Size(0, 56);
+            this.Prompt.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(91, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 31);
+            this.label1.TabIndex = 5;
+            // 
+            // platformstar
+            // 
+            this.platformstar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.platformstar.Location = new System.Drawing.Point(646, 335);
+            this.platformstar.Name = "platformstar";
+            this.platformstar.Size = new System.Drawing.Size(199, 24);
+            this.platformstar.TabIndex = 6;
+            this.platformstar.TabStop = false;
+            this.platformstar.Tag = "platform";
+            // 
+            // star
+            // 
+            this.star.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.star.Location = new System.Drawing.Point(740, 68);
+            this.star.Name = "star";
+            this.star.Size = new System.Drawing.Size(31, 40);
+            this.star.TabIndex = 7;
+            this.star.TabStop = false;
+            this.star.Tag = "star";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(867, 484);
+            this.Controls.Add(this.star);
+            this.Controls.Add(this.platformstar);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Prompt);
+            this.Controls.Add(this.enemy1);
+            this.Controls.Add(this.platform2);
             this.Controls.Add(this.player);
             this.Controls.Add(this.platform1);
             this.Name = "Form1";
@@ -77,7 +151,12 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.platform1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platform2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platformstar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.star)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -86,6 +165,12 @@
         private System.Windows.Forms.PictureBox platform1;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.Timer gametimer;
+        private System.Windows.Forms.PictureBox platform2;
+        private System.Windows.Forms.PictureBox enemy1;
+        private System.Windows.Forms.Label Prompt;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox platformstar;
+        private System.Windows.Forms.PictureBox star;
     }
 }
 

@@ -13,11 +13,13 @@ namespace Jump
     public partial class Form1 : Form
     {
         bool goLeft, goRight, jumping, IsGameOver;
+        bool platformstar_move = true;
         int jumpSpeed;
         int force;
         int playerSpeed = 10;
-
-    
+        int enemy1Speed = 3;
+        int platformSpeed = 2;
+        int characterSkin;
 
         public Form1()
         {
@@ -52,6 +54,31 @@ namespace Jump
                 jumpSpeed = 12;
             }
 
+            enemy1.Left -= enemy1Speed;
+
+            if (enemy1.Left < platform2.Left || enemy1.Left + enemy1.Width > platform2.Left + platform2.Width)
+            {
+                enemy1Speed = -enemy1Speed;
+            }
+
+            if (platformstar_move == true)
+            {
+                platformstar.Top -= platformSpeed;
+            } else if (platformstar_move == false)
+            {
+                platformstar.Top += platformSpeed;
+            }
+
+            if (platformstar.Top < star.Bottom + 40)
+            {
+                platformstar_move = false;
+            }
+
+            if (platformstar.Top > platform2.Top +20)
+            {
+                platformstar_move = true;
+            }
+
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox)
@@ -60,7 +87,7 @@ namespace Jump
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds) && !jumping)
                         {
-                            Console.WriteLine("okokokooko");
+                            
                             force = 8;
                             player.Top = x.Top - player.Height;
                             jumpSpeed = 0;
@@ -68,36 +95,73 @@ namespace Jump
 
                         x.BringToFront();
                     }
+                    if ((string)x.Tag == "enemy")
+                    {
+                        if (player.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            gametimer.Stop();
+                            IsGameOver = true;
+                            label1.Text = "Tu as perdu ! Appuie sur Entrer pour rejouer...";
+                        }
+                    }
+                    if ((string)x.Tag == "star")
+                    {
+                        if (player.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            gametimer.Stop();
+                            IsGameOver = true;
+                            label1.Text = "Tu as Gagné ! Appuie sur Entrer pour rejouer...";
+                        }
+                    }
                 }
             }
          }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Q)
             {
-                Console.WriteLine("Gauche");
                 goLeft = true;
             }
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 goRight = true;
             }
-            if (e.KeyCode == Keys.Up && !jumping)
+            if (e.KeyCode == Keys.Up && !jumping || e.KeyCode == Keys.Z && !jumping)
             {
                 jumping = true;
+            }
+            if (e.KeyCode == Keys.Space)
+            {
+                characterSkin += 1;
+                if (characterSkin == 1)
+                {
+                    player.BackColor = Color.White;
+                }
+                if (characterSkin == 2)
+                {
+                    player.BackColor = Color.Red;
+                }
+                if (characterSkin == 3)
+                {
+                    player.BackColor = Color.Green;
+                }
+                if (characterSkin == 4)
+                {
+                    player.BackColor = Color.DarkBlue;
+                    characterSkin = 0;
+                }
             }
         }
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
             
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Q)
             {
-                Console.WriteLine("Gauche desac");
                 goLeft = false;
             }
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 goRight = false;
             }
@@ -105,8 +169,9 @@ namespace Jump
             {
                 jumping = false;
             }
-            if (e.KeyCode == Keys.Enter && IsGameOver == true)
+            if (e.KeyCode == Keys.Enter && IsGameOver == true || e.KeyCode == Keys.Z && IsGameOver == true)
             {
+                label1.Text = "";
                 ResetGame();
             }
         }
@@ -117,6 +182,8 @@ namespace Jump
             goLeft = false;
             goRight = false;
             IsGameOver = false;
+            platformstar_move = true;
+            characterSkin = 0;
 
             foreach (Control x in this.Controls)
             {
@@ -126,8 +193,8 @@ namespace Jump
                 }
             }
 
-            player.Left = 24;
-            player.Top = 687;
+            player.Left = 24; 
+            player.Top = 372;
 
             gametimer.Start();
 
