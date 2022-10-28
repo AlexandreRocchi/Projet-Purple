@@ -9,3 +9,15 @@ C:\Users\Alex\source\repos\Jump\Jump\bin\Debug\Jump.exe
 C:\Users\Alex\source\repos\Jump\Jump\bin\Debug\Jump.pdb
 C:\Users\Alex\source\repos\Jump\Jump\obj\Debug\Jump.exe
 C:\Users\Alex\source\repos\Jump\Jump\obj\Debug\Jump.pdb
+D:\#ALEX\Documents\C#\Jump\bin\Debug\Jump.exe.config
+D:\#ALEX\Documents\C#\Jump\bin\Debug\Jump.exe
+D:\#ALEX\Documents\C#\Jump\bin\Debug\Jump.pdb
+D:\#ALEX\Documents\C#\Jump\obj\Debug\Jump.csproj.AssemblyReference.cache
+D:\#ALEX\Documents\C#\Jump\obj\Debug\Jump.csproj.SuggestedBindingRedirects.cache
+D:\#ALEX\Documents\C#\Jump\obj\Debug\Jump.exe.config
+D:\#ALEX\Documents\C#\Jump\obj\Debug\Jump.Form1.resources
+D:\#ALEX\Documents\C#\Jump\obj\Debug\Jump.Properties.Resources.resources
+D:\#ALEX\Documents\C#\Jump\obj\Debug\Jump.csproj.GenerateResource.cache
+D:\#ALEX\Documents\C#\Jump\obj\Debug\Jump.csproj.CoreCompileInputs.cache
+D:\#ALEX\Documents\C#\Jump\obj\Debug\Jump.exe
+D:\#ALEX\Documents\C#\Jump\obj\Debug\Jump.pdb
