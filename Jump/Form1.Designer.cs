@@ -40,7 +40,6 @@
             this.player = new System.Windows.Forms.PictureBox();
             this.platform1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Score = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platformstar)).BeginInit();
@@ -156,24 +155,12 @@
             this.label2.TabIndex = 9;
             this.label2.Tag = "Score";
             // 
-            // Score
-            // 
-            this.Score.AutoSize = true;
-            this.Score.Font = new System.Drawing.Font("Cooper Black", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Score.Location = new System.Drawing.Point(746, 5);
-            this.Score.Name = "Score";
-            this.Score.Size = new System.Drawing.Size(74, 21);
-            this.Score.TabIndex = 10;
-            this.Score.Tag = "Score";
-            this.Score.Text = "Score :";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(867, 484);
-            this.Controls.Add(this.Score);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.fire);
             this.Controls.Add(this.star);
@@ -213,7 +200,6 @@
         private System.Windows.Forms.PictureBox star;
         private System.Windows.Forms.PictureBox fire;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label Score;
     }
 }
 

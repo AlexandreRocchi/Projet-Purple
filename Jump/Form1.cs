@@ -20,7 +20,6 @@ namespace Jump
         int enemy1Speed = 3;
         int platformSpeed = 2;
         int characterSkin;
-        int score = 0;
 
         public Form1()
         {
@@ -70,7 +69,8 @@ namespace Jump
             if (platformstar_move == true)
             {
                 platformstar.Top -= platformSpeed;
-            } else if (platformstar_move == false)
+            }
+            else if (platformstar_move == false)
             {
                 platformstar.Top += platformSpeed;
             }
@@ -80,11 +80,11 @@ namespace Jump
                 platformstar_move = false;
             }
 
-            if (platformstar.Top > platform2.Top +20)
+            if (platformstar.Top > platform2.Top + 20)
             {
                 platformstar_move = true;
             }
-            
+
             if (player.Top > 523)
             {
                 gametimer.Stop();
@@ -100,7 +100,7 @@ namespace Jump
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds) && !jumping)
                         {
-                            
+
                             gravity = 8;
                             player.Top = x.Top - player.Height;
                             jumpSpeed = 0;
@@ -130,7 +130,8 @@ namespace Jump
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds))
                         {
-                            if (player.BackColor == Color.Red) {
+                            if (player.BackColor == Color.Red)
+                            {
 
                             }
                             else
@@ -138,13 +139,13 @@ namespace Jump
                                 gametimer.Stop();
                                 IsGameOver = true;
                                 label1.Text = "Tu as perdu ! Appuie sur Entrer pour rejouer...";
-                                
+
                             }
                         }
                     }
                 }
             }
-         }
+        }
 
         private void KeyIsDown(object sender, KeyEventArgs e)
         {
@@ -163,10 +164,10 @@ namespace Jump
             if (e.KeyCode == Keys.Space)
             {
                 characterSkin += 1;
-                
+
                 if (characterSkin == 1)
                 {
-                    playerSpeed =  10;
+                    playerSpeed = 10;
                     enemy1Speed = 1;
                     player.BackColor = Color.White;
                 }
@@ -189,7 +190,7 @@ namespace Jump
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
-            
+
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Q)
             {
                 goLeft = false;
@@ -217,8 +218,6 @@ namespace Jump
             IsGameOver = false;
             platformstar_move = true;
             characterSkin = 0;
-            score = 0;
-            Score.Text = "Score : " + score.ToString();
 
             foreach (Control x in this.Controls)
             {
@@ -228,7 +227,7 @@ namespace Jump
                 }
             }
 
-            player.Left = 24; 
+            player.Left = 24;
             player.Top = 372;
 
             gametimer.Start();
