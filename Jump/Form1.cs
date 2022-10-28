@@ -24,6 +24,7 @@ namespace Jump
         public Form1()
         {
             InitializeComponent();
+            //SUUUUU
         }
 
         private void Main_Game(object sender, EventArgs e)
