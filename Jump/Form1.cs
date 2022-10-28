@@ -16,10 +16,11 @@ namespace Jump
         bool platformstar_move = true;
         int jumpSpeed;
         int gravity;
-        int playerSpeed = 10;
+        int playerSpeed;
         int enemy1Speed = 3;
         int platformSpeed = 2;
         int characterSkin;
+        int score = 0;
 
         public Form1()
         {
@@ -28,6 +29,11 @@ namespace Jump
 
         private void Main_Game(object sender, EventArgs e)
         {
+            if (characterSkin == 0)
+            {
+                player.BackColor = Color.DarkBlue;
+                playerSpeed = 15;
+            }
             player.Top += jumpSpeed;
 
             if (goLeft == true)
@@ -78,6 +84,13 @@ namespace Jump
             {
                 platformstar_move = true;
             }
+            
+            if (player.Top > 523)
+            {
+                gametimer.Stop();
+                IsGameOver = true;
+                label1.Text = "Tu as perdu ! Appuie sur Entrer pour rejouer...";
+            }
 
             foreach (Control x in this.Controls)
             {
@@ -113,6 +126,22 @@ namespace Jump
                             label1.Text = "Tu as Gagné ! Appuie sur Entrer pour rejouer...";
                         }
                     }
+                    if ((string)x.Tag == "fire")
+                    {
+                        if (player.Bounds.IntersectsWith(x.Bounds))
+                        {
+                            if (player.BackColor == Color.Red) {
+
+                            }
+                            else
+                            {
+                                gametimer.Stop();
+                                IsGameOver = true;
+                                label1.Text = "Tu as perdu ! Appuie sur Entrer pour rejouer...";
+                                
+                            }
+                        }
+                    }
                 }
             }
          }
@@ -134,12 +163,16 @@ namespace Jump
             if (e.KeyCode == Keys.Space)
             {
                 characterSkin += 1;
+                
                 if (characterSkin == 1)
                 {
+                    playerSpeed =  10;
+                    enemy1Speed = 1;
                     player.BackColor = Color.White;
                 }
                 if (characterSkin == 2)
                 {
+                    enemy1Speed = 3;
                     player.BackColor = Color.Red;
                 }
                 if (characterSkin == 3)
@@ -148,7 +181,6 @@ namespace Jump
                 }
                 if (characterSkin == 4)
                 {
-
                     player.BackColor = Color.DarkBlue;
                     characterSkin = 0;
                 }
@@ -185,6 +217,8 @@ namespace Jump
             IsGameOver = false;
             platformstar_move = true;
             characterSkin = 0;
+            score = 0;
+            Score.Text = "Score : " + score.ToString();
 
             foreach (Control x in this.Controls)
             {
