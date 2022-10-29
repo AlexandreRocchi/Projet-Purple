@@ -14,6 +14,8 @@ namespace Jump
     {
         bool goLeft, goRight, jumping, IsGameOver;
         bool platformstar_move = true;
+        bool Hard = false;
+        bool Menu = false;
         int jumpSpeed;
         int gravity;
         int playerSpeed;
@@ -190,7 +192,7 @@ namespace Jump
                 if (characterSkin == 1)
                 {
                     playerSpeed = 10;
-                    enemy1Speed = 1;
+                    enemy1Speed = enemy1Speed / 3;
                     player.BackColor = Color.White;
                 }
                 if (characterSkin == 2)
@@ -199,10 +201,6 @@ namespace Jump
                     player.BackColor = Color.Red;
                 }
                 if (characterSkin == 3)
-                {
-                    player.BackColor = Color.Green;
-                }
-                if (characterSkin == 4)
                 {
                     player.BackColor = Color.DarkBlue;
                     characterSkin = 0;
@@ -217,6 +215,17 @@ namespace Jump
             {
                 goLeft = false;
             }
+            if (e.KeyCode == Keys.F1 && Menu == false)
+            {
+                gametimer.Stop();
+                label5.Visible = true;
+                Menu = true;
+            } else if (e.KeyCode == Keys.F1 && Menu == true)
+            {
+                gametimer.Start();
+                label5.Visible=false;
+                Menu = false;
+            }
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 goRight = false;
@@ -230,6 +239,21 @@ namespace Jump
                 label1.Text = "";
                 ResetGame();
             }
+            if (e.KeyCode == Keys.C && Hard == false)
+            {
+                enemy1Speed = enemy1Speed * 2;
+                enemy1.Top = enemy1.Top - 40;
+                platformSpeed = platformSpeed * 3;
+                enemy1.Height = enemy1.Height * 2;
+                Hard = true;
+            } else if (e.KeyCode == Keys.C && Hard == true)
+                    {
+                enemy1Speed = enemy1Speed / 2;
+                enemy1.Top = enemy1.Top + 40;
+                platformSpeed = platformSpeed / 3;
+                enemy1.Height = enemy1.Height / 2;
+                Hard = false;
+            }
         }
 
         private void ResetGame()
@@ -238,6 +262,7 @@ namespace Jump
             goLeft = false;
             goRight = false;
             IsGameOver = false;
+            Menu = false;
             platformstar_move = true;
             characterSkin = 0;
             time = 0;
