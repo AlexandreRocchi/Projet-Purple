@@ -21,6 +21,7 @@ namespace Jump
         int platformSpeed = 2;
         int characterSkin;
         int score = 0;
+        double time;
 
         public Form1()
         {
@@ -29,6 +30,9 @@ namespace Jump
 
         private void Main_Game(object sender, EventArgs e)
         {
+            time = time + 0.03;
+            label4.Text = "Temps : " + Math.Round(time,1).ToString() + " s";
+
             if (characterSkin == 0)
             {
                 player.BackColor = Color.DarkBlue;
@@ -113,11 +117,13 @@ namespace Jump
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
                         {
-                            if (player.Top == x.Top)
+                            if (player.Bottom -1 ==  x.Top)
                             {
                                 x.Visible = false;
                             } else
                             {
+                                Console.WriteLine(x.Top);
+                                Console.WriteLine(player.Bottom);
                                 gametimer.Stop();
                                 IsGameOver = true;
                                 label1.Text = "Tu as perdu ! Appuie sur Entrée pour rejouer...";
@@ -234,8 +240,10 @@ namespace Jump
             IsGameOver = false;
             platformstar_move = true;
             characterSkin = 0;
+            time = 0;
             score = 0;
             label3.Text = "Score : 0";
+            label4.Text = "Temps :" + time.ToString() + "s";
 
             foreach (Control x in this.Controls)
             {
@@ -249,8 +257,6 @@ namespace Jump
             player.Top = 372;
 
             gametimer.Start();
-
-
         }
     }
 }

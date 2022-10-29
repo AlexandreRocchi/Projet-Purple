@@ -43,6 +43,7 @@
             this.fruits = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platformstar)).BeginInit();
@@ -85,7 +86,7 @@
             // 
             this.fire.BackColor = System.Drawing.Color.Red;
             this.fire.Location = new System.Drawing.Point(783, 261);
-            this.fire.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fire.Margin = new System.Windows.Forms.Padding(4);
             this.fire.Name = "fire";
             this.fire.Size = new System.Drawing.Size(44, 181);
             this.fire.TabIndex = 8;
@@ -96,7 +97,7 @@
             // 
             this.star.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.star.Location = new System.Drawing.Point(987, 84);
-            this.star.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.star.Margin = new System.Windows.Forms.Padding(4);
             this.star.Name = "star";
             this.star.Size = new System.Drawing.Size(41, 49);
             this.star.TabIndex = 7;
@@ -107,7 +108,7 @@
             // 
             this.platformstar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.platformstar.Location = new System.Drawing.Point(861, 412);
-            this.platformstar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.platformstar.Margin = new System.Windows.Forms.Padding(4);
             this.platformstar.Name = "platformstar";
             this.platformstar.Size = new System.Drawing.Size(265, 30);
             this.platformstar.TabIndex = 6;
@@ -119,7 +120,7 @@
             this.enemy1.BackColor = System.Drawing.Color.Pink;
             this.enemy1.Enabled = false;
             this.enemy1.Location = new System.Drawing.Point(672, 412);
-            this.enemy1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.enemy1.Margin = new System.Windows.Forms.Padding(4);
             this.enemy1.Name = "enemy1";
             this.enemy1.Size = new System.Drawing.Size(44, 49);
             this.enemy1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,7 +132,7 @@
             // 
             this.platform2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.platform2.Location = new System.Drawing.Point(451, 458);
-            this.platform2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.platform2.Margin = new System.Windows.Forms.Padding(4);
             this.platform2.Name = "platform2";
             this.platform2.Size = new System.Drawing.Size(265, 30);
             this.platform2.TabIndex = 2;
@@ -142,7 +143,7 @@
             // 
             this.player.BackColor = System.Drawing.Color.DarkBlue;
             this.player.Location = new System.Drawing.Point(32, 469);
-            this.player.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.player.Margin = new System.Windows.Forms.Padding(4);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(41, 49);
             this.player.TabIndex = 1;
@@ -153,7 +154,7 @@
             // 
             this.platform1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.platform1.Location = new System.Drawing.Point(32, 539);
-            this.platform1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.platform1.Margin = new System.Windows.Forms.Padding(4);
             this.platform1.Name = "platform1";
             this.platform1.Size = new System.Drawing.Size(265, 30);
             this.platform1.TabIndex = 0;
@@ -202,12 +203,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Tag = "fruits";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(23, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 32);
+            this.label4.TabIndex = 13;
+            this.label4.Tag = "timer-text";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1156, 596);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.fruits);
@@ -221,7 +233,7 @@
             this.Controls.Add(this.platform2);
             this.Controls.Add(this.player);
             this.Controls.Add(this.platform1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Jump";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
@@ -256,6 +268,7 @@
         private System.Windows.Forms.PictureBox fruits;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label4;
     }
 }
 
