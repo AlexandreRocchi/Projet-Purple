@@ -37,7 +37,7 @@ namespace Jump
 
             if (characterSkin == 0)
             {
-                player.BackColor = Color.DarkBlue;
+                player.BackColor = Color.Transparent;
                 playerSpeed = 15;
             }
             player.Top += jumpSpeed;
@@ -176,10 +176,12 @@ namespace Jump
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Q)
             {
                 goLeft = true;
+                player.Image = Jump.Properties.Resources.player2;
             }
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 goRight = true;
+                player.Image = Jump.Properties.Resources.player2;
             }
             if (e.KeyCode == Keys.Up && !jumping || e.KeyCode == Keys.Z && !jumping)
             {
@@ -202,7 +204,7 @@ namespace Jump
                 }
                 if (characterSkin == 3)
                 {
-                    player.BackColor = Color.DarkBlue;
+                    player.BackColor = Color.Yellow;
                     characterSkin = 0;
                 }
             }
@@ -214,6 +216,7 @@ namespace Jump
             if (e.KeyCode == Keys.Left || e.KeyCode == Keys.Q)
             {
                 goLeft = false;
+                player.Image = Jump.Properties.Resources.runleft;
             }
             if (e.KeyCode == Keys.F1 && Menu == false)
             {
@@ -229,6 +232,7 @@ namespace Jump
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
                 goRight = false;
+                player.Image = Jump.Properties.Resources.run;
             }
             if (jumping == true)
             {

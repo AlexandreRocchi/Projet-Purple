@@ -32,6 +32,12 @@
             this.gametimer = new System.Windows.Forms.Timer(this.components);
             this.Prompt = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.fruits = new System.Windows.Forms.PictureBox();
             this.fire = new System.Windows.Forms.PictureBox();
             this.star = new System.Windows.Forms.PictureBox();
             this.platformstar = new System.Windows.Forms.PictureBox();
@@ -39,12 +45,8 @@
             this.platform2 = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.platform1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.fruits = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fruits)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.star)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platformstar)).BeginInit();
@@ -52,8 +54,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.platform2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fruits)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gametimer
@@ -82,6 +82,70 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 39);
             this.label1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1093, 16);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 16);
+            this.label2.TabIndex = 9;
+            this.label2.Tag = "Score";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(662, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 54);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "10";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(23, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 32);
+            this.label4.TabIndex = 13;
+            this.label4.Tag = "timer-text";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(352, 206);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(522, 106);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "BLABLABLA";
+            this.label5.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Green;
+            this.pictureBox1.Location = new System.Drawing.Point(468, 428);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "fruits";
+            // 
+            // fruits
+            // 
+            this.fruits.BackColor = System.Drawing.Color.Green;
+            this.fruits.Location = new System.Drawing.Point(230, 496);
+            this.fruits.Margin = new System.Windows.Forms.Padding(4);
+            this.fruits.Name = "fruits";
+            this.fruits.Size = new System.Drawing.Size(21, 22);
+            this.fruits.TabIndex = 10;
+            this.fruits.TabStop = false;
+            this.fruits.Tag = "fruits";
             // 
             // fire
             // 
@@ -142,11 +206,12 @@
             // 
             // player
             // 
-            this.player.BackColor = System.Drawing.Color.DarkBlue;
-            this.player.Location = new System.Drawing.Point(32, 469);
+            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.Image = global::Jump.Properties.Resources.player2;
+            this.player.Location = new System.Drawing.Point(32, 505);
             this.player.Margin = new System.Windows.Forms.Padding(4);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(41, 49);
+            this.player.Size = new System.Drawing.Size(41, 36);
             this.player.TabIndex = 1;
             this.player.TabStop = false;
             this.player.Tag = "player";
@@ -161,70 +226,6 @@
             this.platform1.TabIndex = 0;
             this.platform1.TabStop = false;
             this.platform1.Tag = "platform";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1093, 16);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Tag = "Score";
-            // 
-            // fruits
-            // 
-            this.fruits.BackColor = System.Drawing.Color.Green;
-            this.fruits.Location = new System.Drawing.Point(230, 496);
-            this.fruits.Margin = new System.Windows.Forms.Padding(4);
-            this.fruits.Name = "fruits";
-            this.fruits.Size = new System.Drawing.Size(21, 22);
-            this.fruits.TabIndex = 10;
-            this.fruits.TabStop = false;
-            this.fruits.Tag = "fruits";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(662, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 54);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "10";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Green;
-            this.pictureBox1.Location = new System.Drawing.Point(468, 428);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "fruits";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 31);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 32);
-            this.label4.TabIndex = 13;
-            this.label4.Tag = "timer-text";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(352, 206);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(522, 106);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "BLABLABLA";
-            this.label5.Visible = false;
             // 
             // Form1
             // 
@@ -252,6 +253,8 @@
             this.Text = "Jump";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fruits)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fire)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.star)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.platformstar)).EndInit();
@@ -259,8 +262,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.platform2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fruits)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -26,7 +26,6 @@ C:\Users\Alex\Documents\GitHub\Projet-Purple\Jump\bin\Debug\Jump.exe
 C:\Users\Alex\Documents\GitHub\Projet-Purple\Jump\bin\Debug\Jump.pdb
 C:\Users\Alex\Documents\GitHub\Projet-Purple\Jump\obj\Debug\Jump.csproj.AssemblyReference.cache
 C:\Users\Alex\Documents\GitHub\Projet-Purple\Jump\obj\Debug\Jump.csproj.SuggestedBindingRedirects.cache
-C:\Users\Alex\Documents\GitHub\Projet-Purple\Jump\obj\Debug\Jump.exe.config
 C:\Users\Alex\Documents\GitHub\Projet-Purple\Jump\obj\Debug\Jump.Form1.resources
 C:\Users\Alex\Documents\GitHub\Projet-Purple\Jump\obj\Debug\Jump.Properties.Resources.resources
 C:\Users\Alex\Documents\GitHub\Projet-Purple\Jump\obj\Debug\Jump.csproj.GenerateResource.cache
