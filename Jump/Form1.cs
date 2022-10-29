@@ -20,6 +20,7 @@ namespace Jump
         int enemy1Speed = 3;
         int platformSpeed = 2;
         int characterSkin;
+        int score = 0;
 
         public Form1()
         {
@@ -110,11 +111,26 @@ namespace Jump
                     }
                     if ((string)x.Tag == "enemy")
                     {
-                        if (player.Bounds.IntersectsWith(x.Bounds))
+                        if (player.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
                         {
-                            gametimer.Stop();
-                            IsGameOver = true;
-                            label1.Text = "Tu as perdu ! Appuie sur Entrer pour rejouer...";
+                            if (player.Top == x.Top)
+                            {
+                                x.Visible = false;
+                            } else
+                            {
+                                gametimer.Stop();
+                                IsGameOver = true;
+                                label1.Text = "Tu as perdu ! Appuie sur Entrée pour rejouer...";
+                            }
+                        }
+                    }
+                    if ((string)x.Tag == "fruits")
+                    {
+                        if (player.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
+                        {
+                            x.Visible = false;
+                            score += 10;
+                            label3.Text = "Score : " + score.ToString();
                         }
                     }
                     if ((string)x.Tag == "star")
@@ -123,7 +139,7 @@ namespace Jump
                         {
                             gametimer.Stop();
                             IsGameOver = true;
-                            label1.Text = "Tu as Gagné ! Appuie sur Entrer pour rejouer...";
+                            label1.Text = "Tu as Gagné ! Appuie sur Entrée pour rejouer...";
                         }
                     }
                     if ((string)x.Tag == "fire")
@@ -138,7 +154,7 @@ namespace Jump
                             {
                                 gametimer.Stop();
                                 IsGameOver = true;
-                                label1.Text = "Tu as perdu ! Appuie sur Entrer pour rejouer...";
+                                label1.Text = "Tu as perdu ! Appuie sur Entrée pour rejouer...";
 
                             }
                         }
@@ -218,6 +234,8 @@ namespace Jump
             IsGameOver = false;
             platformstar_move = true;
             characterSkin = 0;
+            score = 0;
+            label3.Text = "Score : 0";
 
             foreach (Control x in this.Controls)
             {
