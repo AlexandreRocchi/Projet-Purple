@@ -15,14 +15,18 @@ namespace Jump
         bool goLeft, goRight, jumping, IsGameOver;
         bool platformstar_move = true;
         bool Hard = false;
-        bool Menu = false;
+        bool menu = false;
+        bool once = true;
         int jumpSpeed;
         int gravity;
         int playerSpeed;
-        int enemy1Speed = 3;
+        int enemySpeed = 3;
+        int flySpeed = 2;
         int platformSpeed = 2;
         int characterSkin;
         int score = 0;
+        int RightCond = 770;
+        int LeftCond = 586;
         double time;
 
         public Form1()
@@ -66,30 +70,51 @@ namespace Jump
                 jumpSpeed = 12;
             }
 
-            enemy1.Left -= enemy1Speed;
+            enemy2.Left += enemySpeed;
+
+            if (enemy2.Left < platform2.Left  || enemy2.Left + enemy2.Width > platform2.Left + platform2.Width)
+            {
+                enemySpeed = -enemySpeed;
+            }
+
+            enemy1.Left -= enemySpeed;
 
             if (enemy1.Left < platform2.Left || enemy1.Left + enemy1.Width > platform2.Left + platform2.Width)
             {
-                enemy1Speed = -enemy1Speed;
+                enemySpeed = -enemySpeed;
+            }
+            fly1.Left += flySpeed;
+            fly2.Left += flySpeed;
+            if (fly1.Left == LeftCond || fly1.Right == RightCond)
+            {
+                
+                flySpeed = -flySpeed;
             }
 
-            if (platformstar_move == true)
+            if (fly1.Right > 1000)
             {
-                platformstar.Top -= platformSpeed;
+                LeftCond = 828;
             }
-            else if (platformstar_move == false)
+            if (once == false)
             {
-                platformstar.Top += platformSpeed;
-            }
+                if (platformstar_move == true)
+                {
+                    platformstar.Top -= platformSpeed;
+                }
+                else if (platformstar_move == false)
+                {
+                    platformstar.Top += platformSpeed;
+                }
 
-            if (platformstar.Top < star.Bottom + 40)
-            {
-                platformstar_move = false;
-            }
+                if (platformstar.Top < star.Bottom + 40)
+                {
+                    platformstar_move = false;
+                }
 
-            if (platformstar.Top > platform2.Top + 20)
-            {
-                platformstar_move = true;
+                if (platformstar.Top > platform2.Top + 20)
+                {
+                    platformstar_move = true;
+                }
             }
 
             if (player.Top > 523)
@@ -119,7 +144,7 @@ namespace Jump
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
                         {
-                            if (player.Bottom -1 ==  x.Top)
+                            if (player.Bottom -1 ==  x.Top && characterSkin == 1)
                             {
                                 x.Visible = false;
                             } else
@@ -156,7 +181,12 @@ namespace Jump
                         {
                             if (player.BackColor == Color.Red)
                             {
-
+                                if (once == true)
+                                { 
+                                    once = false;
+                                    RightCond = 1026;
+                                    flySpeed = 4;
+                                }
                             }
                             else
                             {
@@ -194,12 +224,12 @@ namespace Jump
                 if (characterSkin == 1)
                 {
                     playerSpeed = 10;
-                    enemy1Speed = enemy1Speed / 3;
+                    enemySpeed = enemySpeed / 3;
                     player.BackColor = Color.White;
                 }
                 if (characterSkin == 2)
                 {
-                    enemy1Speed = 3;
+                    enemySpeed = 3;
                     player.BackColor = Color.Red;
                 }
                 if (characterSkin == 3)
@@ -218,16 +248,16 @@ namespace Jump
                 goLeft = false;
                 player.Image = Jump.Properties.Resources.runleft;
             }
-            if (e.KeyCode == Keys.F1 && Menu == false)
+            if (e.KeyCode == Keys.F1 && menu == false)
             {
                 gametimer.Stop();
                 label5.Visible = true;
-                Menu = true;
-            } else if (e.KeyCode == Keys.F1 && Menu == true)
+                menu = true;
+            } else if (e.KeyCode == Keys.F1 && menu == true)
             {
                 gametimer.Start();
                 label5.Visible=false;
-                Menu = false;
+                menu = false;
             }
             if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
             {
@@ -245,14 +275,14 @@ namespace Jump
             }
             if (e.KeyCode == Keys.C && Hard == false)
             {
-                enemy1Speed = enemy1Speed * 2;
+                enemySpeed = enemySpeed * 2;
                 enemy1.Top = enemy1.Top - 40;
                 platformSpeed = platformSpeed * 3;
                 enemy1.Height = enemy1.Height * 2;
                 Hard = true;
             } else if (e.KeyCode == Keys.C && Hard == true)
                     {
-                enemy1Speed = enemy1Speed / 2;
+                enemySpeed = enemySpeed / 2;
                 enemy1.Top = enemy1.Top + 40;
                 platformSpeed = platformSpeed / 3;
                 enemy1.Height = enemy1.Height / 2;
@@ -266,7 +296,8 @@ namespace Jump
             goLeft = false;
             goRight = false;
             IsGameOver = false;
-            Menu = false;
+            once = true;
+            menu = false;
             platformstar_move = true;
             characterSkin = 0;
             time = 0;
@@ -284,6 +315,16 @@ namespace Jump
 
             player.Left = 24;
             player.Top = 372;
+            enemy1.Left = 550;
+            enemy2.Left = 338;
+            platformstar.Top = 445; 
+            fly1.Left = 604;
+            fly2.Left = 604;
+            fly1.Top = 228;
+            fly2.Top = 318;
+            flySpeed = 2;
+            RightCond = 770;
+            LeftCond = 586;
 
             gametimer.Start();
         }
