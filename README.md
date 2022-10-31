@@ -1,3 +1,3 @@
 ﻿# Projet-Purple
 
-Ancien répo obsolète compartant l'historique des commits
+Ancien répo obsolète comportant l'historique des commits.
