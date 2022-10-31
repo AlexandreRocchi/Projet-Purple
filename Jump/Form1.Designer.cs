@@ -36,6 +36,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.fly2 = new System.Windows.Forms.PictureBox();
+            this.fly1 = new System.Windows.Forms.PictureBox();
+            this.platform4 = new System.Windows.Forms.PictureBox();
+            this.platform5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.enemy2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.fruits = new System.Windows.Forms.PictureBox();
             this.fire = new System.Windows.Forms.PictureBox();
@@ -45,24 +63,24 @@
             this.platform2 = new System.Windows.Forms.PictureBox();
             this.player = new System.Windows.Forms.PictureBox();
             this.platform1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.enemy2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.platform5 = new System.Windows.Forms.PictureBox();
-            this.platform4 = new System.Windows.Forms.PictureBox();
-            this.fly1 = new System.Windows.Forms.PictureBox();
-            this.fly2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platform4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platform5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fruits)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fire)).BeginInit();
@@ -72,24 +90,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.platform2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enemy2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.platform5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.platform4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fly1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fly2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // gametimer
@@ -161,6 +161,208 @@
             this.label5.Text = "BLABLABLA";
             this.label5.Visible = false;
             // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.Green;
+            this.pictureBox16.Location = new System.Drawing.Point(1325, 189);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox16.TabIndex = 34;
+            this.pictureBox16.TabStop = false;
+            this.pictureBox16.Tag = "fruits";
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackColor = System.Drawing.Color.Green;
+            this.pictureBox15.Location = new System.Drawing.Point(1138, 458);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox15.TabIndex = 33;
+            this.pictureBox15.TabStop = false;
+            this.pictureBox15.Tag = "fruits";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Green;
+            this.pictureBox14.Location = new System.Drawing.Point(1195, 78);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox14.TabIndex = 32;
+            this.pictureBox14.TabStop = false;
+            this.pictureBox14.Tag = "fruits";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Green;
+            this.pictureBox13.Location = new System.Drawing.Point(892, 216);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox13.TabIndex = 31;
+            this.pictureBox13.TabStop = false;
+            this.pictureBox13.Tag = "fruits";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.Green;
+            this.pictureBox12.Location = new System.Drawing.Point(864, 323);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox12.TabIndex = 30;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Tag = "fruits";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.Color.Green;
+            this.pictureBox11.Location = new System.Drawing.Point(904, 428);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox11.TabIndex = 29;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Tag = "fruits";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.Color.Green;
+            this.pictureBox9.Location = new System.Drawing.Point(320, 504);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox9.TabIndex = 27;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Tag = "fruits";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Green;
+            this.pictureBox8.Location = new System.Drawing.Point(451, 428);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox8.TabIndex = 26;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Tag = "fruits";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Green;
+            this.pictureBox7.Location = new System.Drawing.Point(674, 428);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox7.TabIndex = 25;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Tag = "fruits";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Green;
+            this.pictureBox6.Location = new System.Drawing.Point(597, 428);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox6.TabIndex = 24;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "fruits";
+            // 
+            // fly2
+            // 
+            this.fly2.BackColor = System.Drawing.Color.Pink;
+            this.fly2.Enabled = false;
+            this.fly2.Location = new System.Drawing.Point(806, 392);
+            this.fly2.Margin = new System.Windows.Forms.Padding(4);
+            this.fly2.Name = "fly2";
+            this.fly2.Size = new System.Drawing.Size(50, 34);
+            this.fly2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fly2.TabIndex = 22;
+            this.fly2.TabStop = false;
+            this.fly2.Tag = "enemy";
+            // 
+            // fly1
+            // 
+            this.fly1.BackColor = System.Drawing.Color.Pink;
+            this.fly1.Enabled = false;
+            this.fly1.Location = new System.Drawing.Point(806, 281);
+            this.fly1.Margin = new System.Windows.Forms.Padding(4);
+            this.fly1.Name = "fly1";
+            this.fly1.Size = new System.Drawing.Size(50, 34);
+            this.fly1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fly1.TabIndex = 21;
+            this.fly1.TabStop = false;
+            this.fly1.Tag = "enemy";
+            // 
+            // platform4
+            // 
+            this.platform4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.platform4.Location = new System.Drawing.Point(864, 353);
+            this.platform4.Margin = new System.Windows.Forms.Padding(4);
+            this.platform4.Name = "platform4";
+            this.platform4.Size = new System.Drawing.Size(140, 27);
+            this.platform4.TabIndex = 20;
+            this.platform4.TabStop = false;
+            this.platform4.Tag = "platform";
+            // 
+            // platform5
+            // 
+            this.platform5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.platform5.Location = new System.Drawing.Point(782, 246);
+            this.platform5.Margin = new System.Windows.Forms.Padding(4);
+            this.platform5.Name = "platform5";
+            this.platform5.Size = new System.Drawing.Size(246, 27);
+            this.platform5.TabIndex = 19;
+            this.platform5.TabStop = false;
+            this.platform5.Tag = "platform";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.pictureBox4.Location = new System.Drawing.Point(864, 458);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(140, 27);
+            this.pictureBox4.TabIndex = 18;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "platform";
+            // 
+            // enemy2
+            // 
+            this.enemy2.BackColor = System.Drawing.Color.Transparent;
+            this.enemy2.Location = new System.Drawing.Point(451, 412);
+            this.enemy2.Margin = new System.Windows.Forms.Padding(4);
+            this.enemy2.Name = "enemy2";
+            this.enemy2.Size = new System.Drawing.Size(58, 49);
+            this.enemy2.TabIndex = 17;
+            this.enemy2.TabStop = false;
+            this.enemy2.Tag = "enemy";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.pictureBox3.Location = new System.Drawing.Point(555, 578);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(140, 27);
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "platform";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.pictureBox2.Location = new System.Drawing.Point(260, 534);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(140, 27);
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Tag = "platform";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Green;
@@ -218,13 +420,11 @@
             // 
             // enemy1
             // 
-            this.enemy1.BackColor = System.Drawing.Color.Pink;
-            this.enemy1.Enabled = false;
-            this.enemy1.Location = new System.Drawing.Point(733, 412);
+            this.enemy1.BackColor = System.Drawing.Color.Transparent;
+            this.enemy1.Location = new System.Drawing.Point(720, 409);
             this.enemy1.Margin = new System.Windows.Forms.Padding(4);
             this.enemy1.Name = "enemy1";
-            this.enemy1.Size = new System.Drawing.Size(44, 49);
-            this.enemy1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.enemy1.Size = new System.Drawing.Size(57, 52);
             this.enemy1.TabIndex = 3;
             this.enemy1.TabStop = false;
             this.enemy1.Tag = "enemy";
@@ -243,7 +443,6 @@
             // player
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
-            this.player.Image = global::Jump.Properties.Resources.player2;
             this.player.Location = new System.Drawing.Point(0, 583);
             this.player.Margin = new System.Windows.Forms.Padding(4);
             this.player.Name = "player";
@@ -262,210 +461,6 @@
             this.platform1.TabIndex = 0;
             this.platform1.TabStop = false;
             this.platform1.Tag = "platform";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.pictureBox2.Location = new System.Drawing.Point(260, 534);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(140, 27);
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "platform";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.pictureBox3.Location = new System.Drawing.Point(555, 578);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(140, 27);
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Tag = "platform";
-            // 
-            // enemy2
-            // 
-            this.enemy2.BackColor = System.Drawing.Color.Pink;
-            this.enemy2.Enabled = false;
-            this.enemy2.Location = new System.Drawing.Point(451, 412);
-            this.enemy2.Margin = new System.Windows.Forms.Padding(4);
-            this.enemy2.Name = "enemy2";
-            this.enemy2.Size = new System.Drawing.Size(44, 49);
-            this.enemy2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.enemy2.TabIndex = 17;
-            this.enemy2.TabStop = false;
-            this.enemy2.Tag = "enemy";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.pictureBox4.Location = new System.Drawing.Point(864, 458);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(140, 27);
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "platform";
-            // 
-            // platform5
-            // 
-            this.platform5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.platform5.Location = new System.Drawing.Point(782, 246);
-            this.platform5.Margin = new System.Windows.Forms.Padding(4);
-            this.platform5.Name = "platform5";
-            this.platform5.Size = new System.Drawing.Size(246, 27);
-            this.platform5.TabIndex = 19;
-            this.platform5.TabStop = false;
-            this.platform5.Tag = "platform";
-            // 
-            // platform4
-            // 
-            this.platform4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.platform4.Location = new System.Drawing.Point(864, 353);
-            this.platform4.Margin = new System.Windows.Forms.Padding(4);
-            this.platform4.Name = "platform4";
-            this.platform4.Size = new System.Drawing.Size(140, 27);
-            this.platform4.TabIndex = 20;
-            this.platform4.TabStop = false;
-            this.platform4.Tag = "platform";
-            // 
-            // fly1
-            // 
-            this.fly1.BackColor = System.Drawing.Color.Pink;
-            this.fly1.Enabled = false;
-            this.fly1.Location = new System.Drawing.Point(806, 281);
-            this.fly1.Margin = new System.Windows.Forms.Padding(4);
-            this.fly1.Name = "fly1";
-            this.fly1.Size = new System.Drawing.Size(50, 34);
-            this.fly1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fly1.TabIndex = 21;
-            this.fly1.TabStop = false;
-            this.fly1.Tag = "enemy";
-            // 
-            // fly2
-            // 
-            this.fly2.BackColor = System.Drawing.Color.Pink;
-            this.fly2.Enabled = false;
-            this.fly2.Location = new System.Drawing.Point(806, 392);
-            this.fly2.Margin = new System.Windows.Forms.Padding(4);
-            this.fly2.Name = "fly2";
-            this.fly2.Size = new System.Drawing.Size(50, 34);
-            this.fly2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.fly2.TabIndex = 22;
-            this.fly2.TabStop = false;
-            this.fly2.Tag = "enemy";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Green;
-            this.pictureBox6.Location = new System.Drawing.Point(597, 428);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox6.TabIndex = 24;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "fruits";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Green;
-            this.pictureBox7.Location = new System.Drawing.Point(674, 428);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox7.TabIndex = 25;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Tag = "fruits";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Green;
-            this.pictureBox8.Location = new System.Drawing.Point(451, 428);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox8.TabIndex = 26;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Tag = "fruits";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Green;
-            this.pictureBox9.Location = new System.Drawing.Point(320, 504);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox9.TabIndex = 27;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Tag = "fruits";
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Green;
-            this.pictureBox11.Location = new System.Drawing.Point(904, 428);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox11.TabIndex = 29;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Tag = "fruits";
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Green;
-            this.pictureBox12.Location = new System.Drawing.Point(864, 323);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox12.TabIndex = 30;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Tag = "fruits";
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Green;
-            this.pictureBox13.Location = new System.Drawing.Point(892, 216);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox13.TabIndex = 31;
-            this.pictureBox13.TabStop = false;
-            this.pictureBox13.Tag = "fruits";
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Green;
-            this.pictureBox14.Location = new System.Drawing.Point(1195, 78);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox14.TabIndex = 32;
-            this.pictureBox14.TabStop = false;
-            this.pictureBox14.Tag = "fruits";
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.Green;
-            this.pictureBox15.Location = new System.Drawing.Point(1138, 458);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox15.TabIndex = 33;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Tag = "fruits";
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackColor = System.Drawing.Color.Green;
-            this.pictureBox16.Location = new System.Drawing.Point(1325, 189);
-            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox16.TabIndex = 34;
-            this.pictureBox16.TabStop = false;
-            this.pictureBox16.Tag = "fruits";
             // 
             // Form1
             // 
@@ -511,6 +506,24 @@
             this.Text = "Jump";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fly1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platform4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.platform5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fruits)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fire)).EndInit();
@@ -520,24 +533,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.platform2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.platform1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enemy2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.platform5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.platform4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fly1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fly2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

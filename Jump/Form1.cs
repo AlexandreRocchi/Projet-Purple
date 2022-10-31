@@ -71,14 +71,19 @@ namespace Jump
             }
 
             enemy2.Left += enemySpeed;
+            if (enemy2.Left < 345)
+            {
+                enemy2.Image = Jump.Properties.Resources.rightslime;
+            }
 
             if (enemy2.Left < platform2.Left  || enemy2.Left + enemy2.Width > platform2.Left + platform2.Width)
-            {
+            { 
+                enemy2.Image = Jump.Properties.Resources.leftslime;
                 enemySpeed = -enemySpeed;
             }
 
             enemy1.Left -= enemySpeed;
-
+            enemy1.Image = Jump.Properties.Resources.rightslime;
             if (enemy1.Left < platform2.Left || enemy1.Left + enemy1.Width > platform2.Left + platform2.Width)
             {
                 enemySpeed = -enemySpeed;
@@ -315,6 +320,7 @@ namespace Jump
 
             player.Left = 24;
             player.Top = 372;
+            enemySpeed = 3;
             enemy1.Left = 550;
             enemy2.Left = 338;
             platformstar.Top = 445; 

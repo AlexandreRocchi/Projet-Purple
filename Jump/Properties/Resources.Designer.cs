@@ -63,9 +63,9 @@ namespace Jump.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Carapuce_removebg_preview {
+        internal static System.Drawing.Bitmap Brown {
             get {
-                object obj = ResourceManager.GetObject("Carapuce-removebg-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("Brown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,30 @@ namespace Jump.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IMG_20221028_132204_removebg_preview {
+        internal static System.Drawing.Bitmap hitslime {
             get {
-                object obj = ResourceManager.GetObject("IMG_20221028_132204-removebg-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("hitslime", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_falling_pixel_star_pro_pixel_art_5aff677cb1ee96_4537240515266876127288_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-falling-pixel-star-pro-pixel-art-5aff677cb1ee96.4537240515266876127288-re" +
+                        "movebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap leftslime {
+            get {
+                object obj = ResourceManager.GetObject("leftslime", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +107,26 @@ namespace Jump.Properties {
         internal static System.Drawing.Bitmap player2 {
             get {
                 object obj = ResourceManager.GetObject("player2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap player21 {
+            get {
+                object obj = ResourceManager.GetObject("player21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rightslime {
+            get {
+                object obj = ResourceManager.GetObject("rightslime", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
